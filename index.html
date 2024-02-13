@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Watch Anime</title>
+</head>
+<body>  
+        <div class="Background">
+             <div class = "heart1"></div>
+                <div class = "heart2"></div>
+                <div class = "heart3"></div>
+                <div class = "heart4"></div>
+                <div class = "heart5"></div>
+                <div class = "heart6"></div>
+                <div class = "heart7"></div>  
+             <div class = "Letter-Container">
+               
+                <div class="Letter-Outside">
+                    <div class ="square">
+                    </div>
+                    <div class = "note">
+                        <div class = "note-container">
+                            <div class="header">
+                                Dear JAIJAI,
+                            </div>
+                            <div class="message-container">
+                                <div class="message">
+                                    <p>
+                                        Happy Valentines!! 
+
+                                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                        <h5>From: Gengen De Vera</h5>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="upper-triangle">
+                    </div>
+                    <div class ="lower-triangle flap">
+                    </div>
+                    
+                      <div class = "heart">
+                    </div>
+                    
+                </div>
+                
+             </div>
+        </div>
+            
+            
+ 
+<script>
+    const letter = document.querySelector('.heart');
+    const upperTriangle = document.querySelector('.upper-triangle')
+    const lowerLetterContainer = document.querySelector('.Letter-Outside')
+    const note = document.querySelector('.note');
+    const heart1 = document.querySelector('.heart1');
+    const heart2 = document.querySelector('.heart2');
+    const heart3 = document.querySelector('.heart3');
+    const heart4 = document.querySelector('.heart4');
+    const heart5 = document.querySelector('.heart5');
+    const heart6 = document.querySelector('.heart6');
+    const heart7 = document.querySelector('.heart7');
+
+    var audio = new Audio('music.mp3');
+
+
+    letter.addEventListener('click',()=>{
+        lowerLetterContainer.style.transform = 'rotate(-30deg)';
+        lowerLetterContainer.style.transition = 'all 0.4s ease-in-out 0.5s';
+        lowerLetterContainer.style.transform = 'rotate(360deg)';
+        
+        upperTriangle.style.transformOrigin = '0 0';
+        upperTriangle.style.transform= 'rotateX(180deg)';
+
+        note.style.transformOrigin = 'bottom center 0';
+        note.style.opacity='1';
+        note.style.transform= 'scale(1.15,1.87)';
+
+        upperTriangle.style.opacity = "0.99";
+        upperTriangle.style.visibility ="hidden";
+
+        audio.play();
+        heart2.style.opacity ="1";
+        heart3.style.opacity ="1";
+        heart4.style.opacity ="1";
+        heart5.style.opacity ="1";
+    })
+</script>
+</body>
+</html>
